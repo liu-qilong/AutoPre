@@ -191,14 +191,24 @@ def read_docx(location):
                 
                 # Matchs the layer of the tiele.
                 
-                if paragraph.style == docx_content.styles['Heading 1']:
-                    layers.append(1)
+                try:
+                    if paragraph.style == docx_content.styles['Heading 1']:
+                        layers.append(1)
+                        
+                except:
+                    pass
                 
-                if paragraph.style == docx_content.styles['Heading 2']:
-                    layers.append(2)
+                try:
+                    if paragraph.style == docx_content.styles['Heading 2']:
+                        layers.append(2)
+                except:
+                    pass
                 
-                if paragraph.style == docx_content.styles['Heading 3']:
-                    layers.append(3)
+                try:
+                    if paragraph.style == docx_content.styles['Heading 3']:
+                        layers.append(3)
+                except:
+                    pass
             
             # Otherwise, it's a part of the note.
             
