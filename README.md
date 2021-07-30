@@ -6,7 +6,7 @@
 . Hence, the dependencies of AutoPre are shown below:
  
  ```
- Python 2.6, 2.7, or 3.x
+ Python 2.6, 2.7 or 3.x
  python-pptx
  lxml
  Pillow
