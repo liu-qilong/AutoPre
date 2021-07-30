@@ -5,11 +5,13 @@
  These scripts are run in a Python environment. We assume that you have installed them successfully. The whole project is also based on an MIT License authorized Python library, [python-pptx](https://python-pptx.readthedocs.io/en/latest/index.html). Check [this](https://python-pptx.readthedocs.io/en/latest/user/install.html) for installing guidance 
 . Hence, the dependencies of Auto are shown below:
  
- Python 2.6, 2.7, 3.3, 3.4, 3.6 or 3.8 (haven't tested other versions)
+ ```
+ Python 2.6, 2.7, or 3.x
  python-pptx
  lxml
  Pillow
  XlsxWriter (to use charting features)
+ ```
  
 ## Content Preparation
  Concentrating on the content itself and the scripts automatically filling the content into the PowerPoint template, that's the whole idea. Thus, we need a carrier for the content. Dynalist and MS Word both serve well for this purpose, therefore they are selected. Put them into the `AutoPre/documents/` folder and the scripts can detect and load them automatically.
@@ -22,16 +24,17 @@
   All the text slides can be mounted with image illustration areas, depending on your choice, which we will mention in the next section.
   Please note that the Dynalist documents should be [exported](https://help.dynalist.io/category/36-import-export) as `.opml` files and put into the `AutoPre/documents` folder.
   
+  ![Sample of .opml file](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_opml.png)
+  
  ### MS Word Documents Preparation
-  In MS Word we can edit the style of a word conveniently. Specifically, on the Home tab left-click any style in the Styles gallery.^[https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563#:~:text=On%20the%20Home%20tab%2C%20right,or%20to%20all%20future%20documents.] AutoPre uses the styles to divide the whole article into different hierarchies.
+  In MS Word we can edit the style of a word conveniently. [Specifically, on the Home tab left-click any style in the Styles gallery.](https://support.microsoft.com/en-us/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563#:~:text=On%20the%20Home%20tab%2C%20right,or%20to%20all%20future%20documents.) AutoPre uses the styles to divide the whole article into different hierarchies.
   In AutoPre, the paragraphs whose styles are "Heading 1" will become first level section slides. And if there are paragraphs whose styles are "Normal" following them, they will become text slides.
   Then the paragraphs whose styles are "Heading 2" will become second level section slides or text slides, depending on your choice, which we will mention in the next section.
   The paragraphs whose styles are "Heading 3" will become the title of the text slides. And the paragraphs whose styles are "Normal" will become the contents following the titles.
   All the text slides can be mounted with image illustration areas, depending on your choice, which we will mention in the next section.
   Please note that the MS Word documents should be saved as `.docx` files and put into the `AutoPre/documents` folder.
  
- ![Sample of .opml file](templates\examples\sample_of_opml.png)
- ![Sample of .docx file](templates\examples\sample_of_docx.png)
+  ![Sample of .docx file](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_docx.png)
 
 ## Run the Script
  Run the AutoPre.py script in the root directory and the guidance will be shown in the console area. It will guide you through the documents loading, parameters setting and PowerPoint (.pptx) files outputting.
@@ -124,14 +127,21 @@ AutoPre:
   Presentation document is outputted to outputs/Opml Example.pptx
   演示文档输出到 outputs/Opml Example.pptx
   ```
- 
- ![Sample of cover slide](templates\examples\sample_of_cover_slide_PolyU.png)
- ![Sample of cover slide](templates\examples\sample_of_cover_slide_SZU.png)
- ![Sample of first level section slide](templates\examples\sample_of_section_1st_level.png)
- ![Sample of second level section slide](templates\examples\sample_of_section_2nd_level.png)
- ![Sample of pure text slide](templates\examples\sample_of_pure_text_slide.png)
- ![Sample of text with image slide](templates\examples\sample_of_text_with_image_slide.png)
- ![Sample of back cover slide](templates\examples\sample_of_back_cover_slide)
+
+ ![Sample of cover slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_cover_slide_PolyU.png)
+
+ ![Sample of cover slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_cover_slide_SZU.png)
+
+ ![Sample of first level section slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_section_1st_level.png)
+
+ ![Sample of second level section slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_section_2nd_level.png)
+
+ ![Sample of pure text slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_pure_text_slide.png)
+
+ ![Sample of text with image slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_text_with_image_slide.png)
+
+ ![Sample of back cover slide](https://github.com/ComradeLogicFlow/AutoPre/blob/main/templates/examples/sample_of_back_cover_slide.png)
+
  
 ## Checking and Composing
  Then you can open the generated document and edit it like any usual PowerPoint document. You can change the layout of the elements, fonts of the content, combine slides that are too sparse, split the slides that are too dense, and whatever you want.
@@ -141,7 +151,7 @@ AutoPre:
   - You need to enter [the Slide Master](https://support.microsoft.com/en-us/office/edit-and-re-apply-a-slide-layout-6f4338f8-555f-49cf-9835-6209be3c7b48) view to edit the template.
   - Please don't delete any placeholders in it. But you can change the fonts, color, typeface as you like.
   - Please add the theme name and theme color into the `THEME_AND_COLORS` directory at the beginning of `AutoPre\instruments\strategy.py` file.
-  eg. Adding a template named `MyTemplate.pptx` with a theme color (R=0 G=0 B=0).^(https://en.wikipedia.org/wiki/RGB_color_model). Then the definition of `THEME_AND_COLORS` should be modified to:
+  eg. Adding a template named `MyTemplate.pptx` with a theme color in [RGB format](https://en.wikipedia.org/wiki/RGB_color_model). Then the definition of `THEME_AND_COLORS` should be modified to:
   
   ```
   THEME_AND_COLORS = {
