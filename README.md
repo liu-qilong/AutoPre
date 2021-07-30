@@ -2,7 +2,7 @@
  Thank you for using AutoPre, a PPT automatic filler based on [Dynalist note](https://dynalist.io), [MS Word document](https://www.microsoft.com/en-ww/microsoft-365/word) and so on, targeting on freeing ourselves from the exhausting ppt formating. Thus, we can focus on the content itself and contribute more valuable outputs.
  
 ## Dependencies
- These scripts are run in a Python environment. We assume that you have installed them successfully. The whole project is also based on a Python library, [python-pptx](https://python-pptx.readthedocs.io/en/latest/index.html), for manipulating .pptx files. Check [here](https://python-pptx.readthedocs.io/en/latest/user/install.html) for installing guidance 
+ These scripts are run in Python environment. We assume that you have installed it successfully. The whole project is also based on a Python library, [python-pptx](https://python-pptx.readthedocs.io/en/latest/index.html), for manipulating `.pptx` files. Check [here](https://python-pptx.readthedocs.io/en/latest/user/install.html) for installing guidance 
 . Hence, the dependencies of AutoPre are shown below:
  
  ```
