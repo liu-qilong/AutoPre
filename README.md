@@ -150,7 +150,7 @@ AutoPre:
   We offer a few formal templates for you. You can edit it and change it as you like. But there are two things to be noted:
   - You need to enter [the Slide Master](https://support.microsoft.com/en-us/office/edit-and-re-apply-a-slide-layout-6f4338f8-555f-49cf-9835-6209be3c7b48) view to edit the template.
   - Please don't delete any placeholders in it. But you can change the fonts, color, typeface as you like.
-  - Please add the theme name and theme color into the `THEME_AND_COLORS` directory at the beginning of `AutoPre\instruments\strategy.py` file.
+  - Please add the theme name and theme color into the `THEME_AND_COLORS` dictionary at the beginning of `AutoPre\instruments\strategy.py` file.
   eg. Adding a template named `MyTemplate.pptx` with a theme color in [RGB format](https://en.wikipedia.org/wiki/RGB_color_model). Then the definition of `THEME_AND_COLORS` should be modified to:
   
   ```
