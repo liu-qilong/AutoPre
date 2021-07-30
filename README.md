@@ -40,7 +40,7 @@
  Run the AutoPre.py script in the root directory and the guidance will be shown in the console area. It will guide you through the documents loading, parameters setting and PowerPoint (.pptx) files outputting.
  The guidance will tell you how to define the title of this presentation, date and author, offer you with choices of templates, let you determine whether the second level sections slides will be used, and whether the image illustration will be used.
  Eventually, AutoPre will generate a PowerPoint `.pptx` documents as required.
- Here is an example of the console runtime and its outputs. 
+ Here is an example of the console command lines and its outputs. 
  
  ```
  AutoPre:
