@@ -144,10 +144,10 @@ AutoPre:
 
  
 ## Checking and Composing
- Then you can open the generated document and edit it like any usual PowerPoint document. You can change the layout of the elements, fonts of the content, combine slides that are too sparse, split the slides that are too dense, and whatever you want.
+ Then you can open the generated documents and edit them like any usual PowerPoint document. You can change the layout of the elements, fonts of the text, combine the slides that are too sparse, split the slides that are too dense, and whatever you want.
  
 ## About the Templates
-  We offer a few formal templates for you. You can edit it and change it as you like. But there are two things to be noted:
+  We offer a few formal templates for you. You can edit it and change it as you like. But there are three things to be noted:
   - You need to enter [the Slide Master](https://support.microsoft.com/en-us/office/edit-and-re-apply-a-slide-layout-6f4338f8-555f-49cf-9835-6209be3c7b48) view to edit the template.
   - Please don't delete any placeholders in it. But you can change the fonts, color, typeface as you like.
   - Please add the theme name and theme color into the `THEME_AND_COLORS` dictionary at the beginning of `AutoPre\instruments\strategy.py` file.
