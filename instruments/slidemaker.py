@@ -85,7 +85,7 @@ class CoverSlideMaker(BasicSlideMaker):
         
         for child in self.node.child:
             run = item.add_run()
-            run.text = str(num) + '.' + child.title + '\n'
+            run.text = str(num) + '. ' + child.title + '\n'
             num += 1
 
         run = item.add_run()
@@ -195,7 +195,7 @@ class TextSlideMaker(BasicSlideMaker):
         
         item = self.get_item(13)
         
-        item.text = '◤' + self.node.title + '\n'
+        item.text = '◤' + self.node.title + '\n\n'
         item.font.color.rgb = RGBColor(*self.prs_info['color'])
         
         run = item.add_run()
@@ -250,7 +250,7 @@ class ImgTextSlideMaker(BasicSlideMaker):
         
         item = self.get_item(13)
         
-        item.text = '◤' + self.node.title + '\n'
+        item.text = '◤' + self.node.title + '\n\n'
         item.font.color.rgb = RGBColor(*self.prs_info['color'])
         
         run = item.add_run()
