@@ -12,5 +12,5 @@ If you have any questions or suggestions, please don't hesitate to contact me. T
 
 from instruments import strategy
 
-strategy.guide_through("documents/", "outputs/")
-
+if __name__ == "__main__":
+    strategy.guide_through("documents/", "outputs/")

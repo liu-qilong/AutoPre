@@ -1,7 +1,19 @@
 # gitignore
 .DS_Store
 .idea/
+build/
 __pycache__/
-media/
-dataset/
-model_param/
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+*.toc.vrb
+*.vrb
+*.bbl
+*.bcf
+*.run.xml
+*.blg
+*.pdf
